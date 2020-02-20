@@ -71,6 +71,18 @@
   max-width: 10%;
   height: auto;
 }
+.bg {
+  /* The image used */
+  background-image: url("./background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
             </style>
             <script>
                 /* Set the width of the side navigation to 250px */
@@ -104,9 +116,6 @@ function closeNav() {
                   
                   <!-- Use any element to open the sidenav -->
                   <span class="text-light " onclick="openNav()"><img src="threelines.png" class="img-fluid" alt="Responsive image"></image></span>
-                  <a class="navbar-brand" href="#">
-                    <img src="bird.jpg" alt="Logo" style="width:40px;">
-                  </a>
                   <ul class="navbar-nav  mr-5 ml-5">
                     <li><a class=" text-light" href="#aboutus">About Us</a></li></ul>
                     <ul class="navbar-nav mr-5 ml-5">
@@ -116,13 +125,18 @@ function closeNav() {
                           <li>
                              <a href="schedule1.pdf" class="text-light" download><i class="fa fa-download"></i>Schedule</a>
                           </li>
-                        </div></ul></nav>
+                        </div></ul>
+                        <ul class="navbar-nav mr-5 ml-5">
+                          <li><a class=" text-light" href="#follow">Follow Us</a></li></ul>
+                      <ul class="ml-auto">
+                        <li><img src="logo.jpeg" alt="Logo" style="width:100px;"></li>
+                      </ul></nav>
                   <!--Name of tech fest-->
                   
 <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; overflow: hidden">
-    <div class="container-fluid h-100 bg-dark">
-        <div class="row h-100 d-flex align-items-center">
-            <div class="col text-white">
+    <div class="container-fluid h-100 bg">
+      <div class="row ml-5 h-100 d-flex align-items-center">
+            <div class="col ml-5 text-white">
                 <div class="col border-left py-4 ml-5">
                     <h1 class="light stretch display-3 font-weight-bolder" style="margin: 0 0 -15px -6px;">COMEST</h1>
                     <h3 class="bold stretch d-none d-md-block " style="margin-bottom: -5px">The Computer Science Department <br>
@@ -133,7 +147,7 @@ function closeNav() {
                     <a class="btn btn-outline-light btn-lg mt-2 px-3 rounded-0 no-btn-shadow light stretch" data-tilt href="#events">REGISTER NOW</a>                    
                 </div>
             </div>
-        </div>
+          </div>
     </div>
 </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div id="aboutus" class="container-fluid">
@@ -153,9 +167,9 @@ function closeNav() {
     <div class="row ml-5 mt-5">
         <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6">
             <div class="card" style="width:400px">
-                <img class="card-img-top" src="./a.jpg" alt="Card image">
+                <img class="card-img-top" src="./codeswap.jpeg" alt="Card image">
                 <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Code Swap</h4>
+                  <h4 class="card-title font-weight-bold text-center">Code Swap</h4>
                   <p class="card-text">Want to be a part of amazing coding event? If yes, then find a partner that matches your skills 
                     and knows you.
                     <br>
@@ -166,15 +180,15 @@ function closeNav() {
                     Timings:- 9:30 AM Onwards
                    </div>
                   </p>
-                  <a href="#" class="btn btn-primary">Register</a>
+                  <a href="https://bit.ly/3bNHMvT" class="btn btn-primary">Register</a>
                 </div>
               </div>
         </div>
         <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6">
             <div class="card" style="width:400px">
-                <img class="card-img-top" src="./a.jpg" alt="Card image">
+                <img class="card-img-top h-10" src="./codefast.jpeg" alt="Card image">
                 <div class="card-body">
-                  <h4 class="card-title">Code Fast</h4>
+                  <h4 class="card-title font-weight-bold text-center">Code Fast</h4>
                   <p class="card-text">Time a major threat for most of the coders...Are you not affraid of it? Then come here to win a prize
                     by completing codes asap...
                     <div class="text-dark font-weight-bold">Team Size:-2 members each team<br> Date:-2 March,2020
@@ -184,15 +198,15 @@ function closeNav() {
                       Timings:- 1:30 PM-3:00 PM
                      </div>
                   </p>
-                  <a href="#" class="btn btn-primary">Register</a>
+                  <a href="https://bit.ly/2T3fvZp" class="btn btn-primary">Register</a>
                 </div>
               </div>
     </div>
     <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6">
         <div class="card" style="width:400px">
-            <img class="card-img-top" src="./a.jpg" alt="Card image">
+            <img class="card-img-top" src="./selectbrain.jpeg" alt="Card image">
             <div class="card-body">
-              <h4 class="card-title">Select * From Brain</h4>
+              <h4 class="card-title font-weight-bold text-center">Select * From Brain</h4>
               <p class="card-text">Do you think you are good at SQL? If yes, then come with your partner to test your skills...
                 <div class="text-dark font-weight-bold">Team Size:-2 members each team<br> Date:-2 & 3 March,2020
                   <br>
@@ -201,15 +215,15 @@ function closeNav() {
                   Timings:- 11:30 AM Onwards
                  </div>
               </p>
-              <a href="#" class="btn btn-primary">Register</a>
+              <a href="https://bit.ly/2ue90uw" class="btn btn-primary">Register</a>
             </div>
           </div>
 </div>
 <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6 mt-5">
     <div class="card" style="width:400px">
-        <img class="card-img-top" src="./a.jpg" alt="Card image">
+        <img class="card-img-top" src="./techhunt.jpeg" alt="Card image">
         <div class="card-body">
-          <h4 class="card-title">Tech Treasure Hunt</h4>
+          <h4 class="card-title font-weight-bold text-center">Tech Treasure Hunt</h4>
           <p class="card-text">Decode exciting ciphers to win the treasures....!!!
             <div class="text-dark font-weight-bold">Team size:- max of 4 members and min of 2 menbers each team <br>
                Date:-2 March,2020
@@ -219,15 +233,15 @@ function closeNav() {
               Timings:- 10:00 AM Onwards
              </div>
           </p>
-          <a href="#" class="btn btn-primary">Register</a>
+          <a href="https://bit.ly/2ubAl0m" class="btn btn-primary">Register</a>
         </div>
       </div>
 </div>
 <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6 mt-5">
     <div class="card" style="width:400px">
-        <img class="card-img-top" src="./a.jpg" alt="Card image">
+        <img class="card-img-top" src="./doodling.jpeg" alt="Card image">
         <div class="card-body">
-          <h4 class="card-title">Doodling</h4>
+          <h4 class="card-title font-weight-bold text-center">Doodling</h4>
           <p class="card-text">Have a artist in you..Come here to showcase your artistic talent!!
             <div class="text-dark font-weight-bold">Team Size:- Individual <br>Date:-2 March,2020
               <br>
@@ -236,15 +250,15 @@ function closeNav() {
               Timings:- 10:30 AM-11:30 AM
              </div>
           </p>
-          <a href="#" class="btn btn-primary">Register</a>
+          <a href="https://bit.ly/2V3DMS1" class="btn btn-primary">Register</a>
         </div>
       </div>
 </div>
 <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6 mt-5">
     <div class="card" style="width:400px">
-        <img class="card-img-top" src="./a.jpg" alt="Card image">
+        <img class="card-img-top" src="./brainout.jpeg" alt="Card image">
         <div class="card-body">
-          <h4 class="card-title">Brain Out</h4>
+          <h4 class="card-title font-weight-bold text-center">Brain Out</h4>
           <p class="card-text">Are you a fan of solving riddles and puzzles?If yes....Then this is for you.
             <div class="text-dark font-weight-bold"> Team Size:- 2 members each team<br>Date:-3 March,2020
               <br>
@@ -253,15 +267,15 @@ function closeNav() {
               Timings:- 11:00 AM -12:30 PM
              </div>
           </p>
-          <a href="#" class="btn btn-primary">Register</a>
+          <a href="https://bit.ly/2SYBroQ" class="btn btn-primary">Register</a>
         </div>
       </div>
 </div>
 <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6 mx-auto">
   <div class="card mt-5" style="width:400px">
-      <img class="card-img-top" src="./a.jpg" alt="Card image">
+      <img class="card-img-top" src="./pubg.jpeg" alt="Card image">
       <div class="card-body">
-        <h4 class="card-title">Pubg</h4>
+        <h4 class="card-title font-weight-bold text-center">Pubg</h4>
         <p class="card-text">Wanna fight??Let's see how much strength you have..Squad Pubg challange.
           <div class="text-dark font-weight-bold">Team Size:-4 members each team<br> Date:-3 March,2020
             <br>
@@ -270,7 +284,7 @@ function closeNav() {
             Timings:- 1:30 PM Onwards
            </div>
         </p>
-        <a href="#" class="btn btn-primary">Register</a>
+        <a href="https://bit.ly/2vUj0JN" class="btn btn-primary">Register</a>
       </div>
     </div>
 </div>
