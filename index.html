@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="view part" content="width= device-width, initital-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+    }
+  </style>
+  <style>
+    /* The side navigation menu */
+    .sidenav {
+      height: 100%;
+      /* 100% Full-height */
+      width: 0;
+      /* 0 width - change this with JavaScript */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Stay on top */
+      top: 0;
+      /* Stay at the top */
+      left: 0;
+      background-color: #111;
+      /* Black*/
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      padding-top: 60px;
+      /* Place content 60px from the top */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    .header {
+      background-image: url(images/1.jpeg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+    }
+
+
+    .img-fluid {
+      max-width: 10%;
+      height: auto;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("background.jpg");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bg1{
+      background-image:url("image1.jpg")
+    }
+
+    #particles-js {
+      background-image: url('background.jpg');
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- nav bar-->
+  <div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#aboutus">About Us</a>
+        <a href="./gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#sponsors">Sponsors</a>
+        <div class="columns download">
+          <li>
+            <a href="schedule1.pdf" class="text-muted" download><i class="fa fa-download"></i>Schedule</a>
+          </li>
+        </div>
+      </div>
+
+      <!-- Use any element to open the sidenav -->
+      <span class="text-light " onclick="openNav()"><img src="threelines.png" class="img-fluid" alt="Responsive image">
+        </image></span>
+      <ul class="navbar-nav  mr-5 ml-5">
+        <li><a class=" text-light" href="#aboutus">About Us</a></li>
+      </ul>
+      <ul class="navbar-nav mr-5 ml-5">
+        <li><a class=" text-light" href="#events">Events</a></li>
+      </ul>
+      <ul class="navbar-nav mr-5  ml-5">
+        <div class="columns download">
+          <li>
+            <a href="schedule1.pdf" class="text-light" download><i class="fa fa-download"></i>Schedule</a>
+          </li>
+        </div>
+      </ul>
+      
+      <ul class="ml-auto">
+        <li><img src="logo.jpeg" alt="Logo" style="width:100px;"></li>
+      </ul>
+    </nav>
+    <!--Name of tech fest-->
+    <div id="particles-js">
+        <div class="container-fluid h-100">
+      <div class="row ml-5 h-100 d-flex align-items-center mt-5 pt-5">
+            <div class="col ml-5 text-white">
+              <div class="col border-left py-4 ml-5">
+                <h1 class="light stretch display-3 font-weight-bolder text-light" style="margin: 0 0 -15px -6px;">COMEST</h1>
+                <h3 class="bold stretch d-none d-md-block " style="margin-bottom: -5px">The Computer Science
+                  Department
+                  <br>
+                  Dyal Singh College, University Of Delhi</h3>
+
+                <h4 class="light stretch ml-1">Presents <br>The Annual Tech Fest</h4>
+                <h5 class="light stretch mt-4">2<sup>nd</sup>-3<sup>rd</sup>March 2020</h5>
+                <a class="btn btn-outline-light btn-lg mt-2 px-3 rounded-0 no-btn-shadow light stretch" data-tilt
+                  href="#events">REGISTER NOW</a>
+              </div>
+            </div>
+          </div>
+      </div>
+            
+    </div>
+    
+    <!-- ?<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <div class="bg1">
+    <div id="aboutus" class="container-fluid ">
+      <h1 class="text-center text-light  font-weight-bolder font-italic pt-5">About Us</h1>
+      <div class="row mt-3 mb-3">
+        <div class=" text-center container">
+          <p class=" text-center text-light font-weight-normal ">COMEST the computer science society of Dyal Singh College is all
+            set to take you on a fun filled annual Tech fest 'Name of the fest'.
+            Since past X years, COMEST has been organising various seminars, workshops, excursions with various IT
+            personalities.'Name' aims at introducing and promoting once talent in coding and gaming with a pinch of
+            frolic.'Name' brings an opportunity for you to awake your skills and senses and also win exciting prizes by
+            simply engaging yourselves in tasks you are good at.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
+        </div>
+      </div>
+    </div>
+    <div id="events" class="container-fluid ">
+      <h1 class="text-center text-light pt-5 font-weight-bolder font-italic">EVENTS</h1>
+      <div class="row ml-5 mt-5">
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="./codeswap.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold text-center">Code Swap</h4>
+              <p class="card-text">Want to be a part of amazing coding event? If yes, then find a partner that matches
+                your skills
+                and knows you.
+                <br>
+                <h3>Despription:-</h3>
+                <p>
+                  Each team will be given 2 questions, one for each team member and 20 minutes to code. Team members than have to write the code for their respective questions. We will swap the questions after half time, i.e. now 1st member have to complete the code of 2nd member and vice- versa</p>
+                <br>
+                <div class="text-dark font-weight-bold">Team Size:-2 members each team<br> Date:-2  March,2020
+                  <br>
+                  Venue:- Lab 1003,lab 1004
+                  <br>
+                  Timings:- 9:30 AM Onwards
+                </div>
+              </p>
+              <a href="https://bit.ly/3bNHMvT" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top h-10" src="./codefast.jpeg" alt="Card image">
+            <div class="card-body">
+              <br>
+              <h4 class="card-title font-weight-bold text-center">Code Fast</h4>
+              <br>
+              <p class="card-text">Time a major threat for most of the coders...Are you not affraid of it? Then come
+                here to win a prize
+                by completing codes asap...<br><br>
+                <h3>Despription:-</h3><br>
+                <p>
+                  Each team will be given 2 questions to code. The one solving both the questions in the minimum time will win</p>
+                <br>
+                <div class="text-dark font-weight-bold">Team Size:-2 members each team<br> Date:-2 March,2020
+                  <br>
+                  Venue:- Lab 1003,lab 1004
+                  <br>
+                  Timings:- 11:15 AM onwards
+                </div>
+              </p><br>
+              <a href="https://bit.ly/2T3fvZp" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="./selectbrain.jpeg" alt="Card image">
+            <div class="card-body">
+              <br>
+              <h4 class="card-title font-weight-bold text-center">Select * From Brain</h4>
+              <br>
+              <p class="card-text">Do you think you are good at SQL? If yes, then come with your partner to test your
+                skills...<br><br>
+                <h3>Despription:-</h3><br>
+                <p>
+                  Each team will have to perform the required sql functions given in the question</p>
+                <br>
+                <div class="text-dark font-weight-bold">Team Size:-2 members each team<br> Date:-2 March,2020
+                  <br>
+                  Venue:- Lab 1003,lab 1004
+                  <br>
+                  Timings:- 10:00 AM Onwards
+                </div>
+                <br>
+              </p>
+              <a href="https://bit.ly/2ue90uw" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="./techhunt.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold text-center">Tech Treasure Hunt</h4>
+              <p class="card-text">Decode exciting ciphers to win the treasures....!!!
+                <br>
+                <h3>Despription:-</h3><br>
+                <p>
+                  Each team will have to crack amazing cyphers and have to reach the place obtained to win the treasure</p>
+                <br>
+                <div class="text-dark font-weight-bold">Team size:- max of 4 members and min of 2 menbers each team <br>
+                  Date:-2 March,2020
+                  <br>
+                  Venue:- Lab 1003,lab 1004,New Science block
+                  <br>
+                  Timings:- 10:45 AM Onwards
+                </div>
+              </p>
+              <a href="https://bit.ly/2ubAl0m" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="./doodling.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold text-center">Doodling</h4>
+              <p class="card-text">Have a artist in you..Come here to showcase your artistic talent!!
+                <br>
+                <h3>Despription:-</h3><br>
+                <p>
+                  The participants will be given a theme on the spot and they have to submit there doodle on the same within 30 minutes</p>
+                <br>
+                <div class="text-dark font-weight-bold">Team Size:- Individual <br>Date:-2 March,2020
+                  <br>
+                  Venue:- Room no. 4002
+                  <br>
+                  Timings:- 12:30 PM
+                </div>
+              </p>
+              <a href="https://bit.ly/2V3DMS1" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="./brainout.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold text-center">Brain Out</h4>
+              <p class="card-text">Are you a fan of solving riddles and puzzles?If yes....Then this is for you.
+                
+                <h3>Despription:-</h3>
+                <p>
+                  There will be a setup like snakes and ladders and on each square there will be a riddle. Each team has to through the dice to get their riddles. Team that reaches the other end in minimum time will be the winner</p>
+              
+                <div class="text-dark font-weight-bold"> Team Size:- 2 members each team<br>Date:-2 March,2020
+                  <br>
+                  Venue:- New Science Block
+                  <br>
+                  Timings:- 2:30 PM Onwards
+                </div>
+              </p>
+              <a href="https://bit.ly/2SYBroQ" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4 col-sm-6 col-6 mt-5">
+          <div class="card mt-5" style="width:400px">
+            <img class="card-img-top" src="./pubg.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold text-center ">Pubg</h4>
+              <p class="card-text">Wanna fight??Let's see how much strength you have..Squad Pubg challange.
+                <h3>Despription:-</h3>
+                <p>
+                  Id and password will be provided to each team and they have to enter the room the team who will score the highest points according to the points table will be the winner</p>
+                <div class="text-dark font-weight-bold">Team Size:-4 members each team<br> Date:-3 March,2020
+                  <br>
+                  Venue:- New Science Block
+                  <br>
+                  Timings:- 1:30 PM Onwards
+                </div>
+              </p>
+              <a href="https://bit.ly/2vUj0JN" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-6 mt-5">
+          <h1 class="text-warning font-weight-bold text-center">Connect With Us</h1>
+          <p><a href="https://instagram.com/comestdsc?igshid=1f7q5v5k2azlu" class="text-white">https://instagram.com/comestdsc?igshid=1f7q5v5k2azlu</a></p>
+          <br>
+          <p><a href="https://www.facebook.com/comestdsccs/" class="text-white">https://www.facebook.com/comestdsccs/</a></p>
+          <br>
+          <br>
+          <h1 class="text-warning font-weight-bold text-center">Contact Us</h1>
+          <h3 class="text-primary font-weight-bold text-center">Harshita (7839268315)</h3>
+          <h3 class="text-primary font-weight-bold text-center">Tanshi (9891054795)</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div>
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS.load('particles-js', 'particles.json',
+        function () {
+          console.log('particles.json loaded...')
+        })
+    </script>
+    <div id="demo" class="collapse">
+      Some text..
+      </div>
+</body>
+
+</html>
